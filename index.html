@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html ng-app="myApp">
+        <head>
+            <title>BlogIt!</title>
+            
+            <!--CSS file -->
+            <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+
+            <!-- CSS Files -->
+            <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="bower_components/stamplay-js-sdk/dist/stamplay.min.js"></script>
+            <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+            <script type="text/javascript" src="bower_components/angular/angular-route/angular-route.min.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+        </head>
+        <body ng-controller="myCtrl">
+            <div class="container-fluid">
+                <div ng-include="'structures/menu.html'"></div>
+                <div ng-include="'structures/jumbotron.html'"></div> 
+            </div>
+            <div ng-view></div>      
+        </body>
+    </html>
